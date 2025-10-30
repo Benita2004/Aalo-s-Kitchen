@@ -85,6 +85,24 @@ function toggleMenu() {
       setTimeout(() => dishImg.classList.remove("fade-image"), 400);
     });
   }
+
+/* ====== AUTO DISH OF THE DAY ======
+   Automatically pick a dish based on today's date
+   so everyone sees a consistent "Dish of the Day".
+================================= */
+function showDishOfTheDay() {
+  const today = new Date();
+  const dayIndex = today.getDate() % dishes.length; // Cycles through dishes
+  const dish = dishes[dayIndex];
+
+  dishName.textContent = dish.name;
+  dishImg.src = dish.img;
+  dishImg.alt = dish.name;
+}
+
+// Run automatically when the page loads
+window.addEventListener("DOMContentLoaded", showDishOfTheDay);
+
   
   /* ====== SUGGEST A RESTAURANT FORM ======
      Displays a thank-you message dynamically upon form submission.
@@ -111,4 +129,5 @@ function toggleMenu() {
   }
 
   
+
 
