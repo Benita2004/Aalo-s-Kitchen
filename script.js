@@ -53,9 +53,9 @@ function toggleMenu() {
      Dishes are stored as objects with name + image path.
   ================================= */
  const dishes = [
-  { name: "Jellof Rice (Nigeria)", img: "Jellof rice.jpg" },
+  { name: "Jellof rice (Nigeria)", img: "Jellof rice.jpg" },
   { name: "Waakye (Ghana)", img: "Waakye.jpg" },
-  { name: "Bunny Chow (South Africa)", img: "Bunny chow.jpg" },
+  { name: "Bunny chow (South Africa)", img: "Bunny chow.jpg" },
   { name: "Suqaar (Somalia)", img: "Suqaar.jpg" },
   { name: "Egusi Soup (Nigeria)", img: "Egusi.jpg" },
   { name: "Bobotie (South Africa)", img: "Bobotie.jpg" },
@@ -111,3 +111,4 @@ function toggleMenu() {
   }
 
   
+
