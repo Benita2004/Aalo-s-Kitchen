@@ -239,12 +239,16 @@ h1, h2, h3 {
   margin-bottom: 15px;
 }
 
-.profile-img {
-  width: 120px;
-  border-radius: 50%;
-  display: block;
-  margin: 0 auto 25px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+
+  .Profile-jpg {
+    width: 130px;          /* Adjust overall size */
+    height: 130px;         /* Keep it square */
+    object-fit: cover;     /* Ensures face stays centered */
+    border-radius: 50%;    /* Makes it circular */
+    display: block;
+    margin: 0 auto 25px;   /* Centers it */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border: 4px solid #e67e22; /* Optional: orange border to match theme */
 }
 
 /* Footer */
