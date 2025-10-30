@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- ===== Meta and Title ===== -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aromas of Africa</title>
+
+  <!-- ===== Stylesheets and Fonts ===== -->
   <link rel="stylesheet" href="website.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
   <script src="https://kit.fontawesome.com/a2e0ad2c62.js" crossorigin="anonymous"></script>
@@ -11,16 +14,25 @@
 </head>
 
 <body>
+  <!-- ===== Navigation Bar ===== -->
   <header class="navbar">
-    <div class="logo"><i class="fa-solid fa-utensils"></i> Aromas of Africa</div>
+    <div class="logo">
+      <i class="fa-solid fa-utensils"></i> Aromas of Africa
+    </div>
+
+    <!-- Navigation Links -->
     <nav class="nav-links" id="navLinks">
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#menu">Menu</a></li>
         <li><a href="#language">Language</a></li>
+        <li><a href="#dish-day">Dish of the Day</a></li>
+        <li><a href="#suggest">Suggest</a></li>
         <li><a href="#about">About</a></li>
       </ul>
     </nav>
+
+    <!-- Dark mode + Menu toggle (mobile) -->
     <div class="right-icons">
       <button class="dark-toggle" id="darkToggle" aria-label="Toggle Dark Mode">
         <i class="fa-solid fa-moon"></i>
@@ -32,29 +44,35 @@
   </header>
 
   <main>
-    <!-- Home Section -->
+    <!-- ===== Home Section ===== -->
     <section id="home" class="section home fade-in">
       <div class="home-text">
         <h1>Welcome to <span>Aromas of Africa</span></h1>
         <p>
-          As an international student, I know how important it is to find food that feels like home. That’s why I created
-          <strong>Aromas of Africa</strong>, a space where flavour meets comfort. Discover authentic African restaurants and dishes that celebrate
-          culture and connection in every bite.
+          As an international student, I know how important it is to find food that feels like home.
+          That’s why I created <strong>Aromas of Africa</strong>  a space where flavour meets comfort.
+          Discover authentic African restaurants and dishes that celebrate culture and connection in every bite.
         </p>
-        <a href="#menu" class="btn"><i class="fa-solid fa-book-open"></i> Explore Menu</a>
+        <a href="#menu" class="btn">
+          <i class="fa-solid fa-book-open"></i> Explore Menu
+        </a>
       </div>
     </section>
 
-    <!-- Menu Section -->
+    <!-- ===== Menu Section ===== -->
     <section id="menu" class="section fade-in">
       <h2><i class="fa-solid fa-globe"></i> Menu Highlights</h2>
       <p class="section-intro">
-        Discover signature dishes from across Africa, rich, colourful, and full of flavour.
+        Discover signature dishes from across Africa — rich, colourful, and full of flavour.
       </p>
 
       <div class="menu-grid">
+        <!-- Nigeria -->
         <div class="menu-card">
-          <h3><img src="https://flagcdn.com/w40/ng.png" alt="Nigeria flag" class="flag-img" /> Nigeria</h3>
+          <h3>
+            <img src="https://flagcdn.com/w40/ng.png" alt="Nigeria flag" class="flag-img" />
+            Nigeria
+          </h3>
           <ul>
             <li>Jollof Rice</li>
             <li>Pounded Yam & Egusi Soup</li>
@@ -64,8 +82,12 @@
           </ul>
         </div>
 
+        <!-- Ghana -->
         <div class="menu-card">
-          <h3><img src="https://flagcdn.com/w40/gh.png" alt="Ghana flag" class="flag-img" /> Ghana</h3>
+          <h3>
+            <img src="https://flagcdn.com/w40/gh.png" alt="Ghana flag" class="flag-img" />
+            Ghana
+          </h3>
           <ul>
             <li>Waakye</li>
             <li>Banku & Tilapia</li>
@@ -75,8 +97,12 @@
           </ul>
         </div>
 
+        <!-- Somalia -->
         <div class="menu-card">
-          <h3><img src="https://flagcdn.com/w40/so.png" alt="Somalia flag" class="flag-img" /> Somalia</h3>
+          <h3>
+            <img src="https://flagcdn.com/w40/so.png" alt="Somalia flag" class="flag-img" />
+            Somalia
+          </h3>
           <ul>
             <li>Bariis (Somali Rice)</li>
             <li>Suqaar (Spiced Meat Stew)</li>
@@ -86,8 +112,12 @@
           </ul>
         </div>
 
+        <!-- South Africa -->
         <div class="menu-card">
-          <h3><img src="https://flagcdn.com/w40/za.png" alt="South Africa flag" class="flag-img" /> South Africa</h3>
+          <h3>
+            <img src="https://flagcdn.com/w40/za.png" alt="South Africa flag" class="flag-img" />
+            South Africa
+          </h3>
           <ul>
             <li>Bunny Chow</li>
             <li>Braai (Barbecue)</li>
@@ -99,7 +129,7 @@
       </div>
     </section>
 
-    <!-- Language Section -->
+    <!-- ===== Languages Section ===== -->
     <section id="language" class="section fade-in">
       <h2><i class="fa-solid fa-language"></i> Languages Spoken</h2>
       <div class="language-grid">
@@ -107,17 +137,14 @@
           <h3><img src="https://flagcdn.com/w40/ng.png" alt="Nigeria flag" class="flag-img" /> Nigeria</h3>
           <p>English, Yoruba, Igbo, Hausa</p>
         </div>
-
         <div class="language-card">
           <h3><img src="https://flagcdn.com/w40/gh.png" alt="Ghana flag" class="flag-img" /> Ghana</h3>
           <p>English, Twi, Ga, Ewe</p>
         </div>
-
         <div class="language-card">
           <h3><img src="https://flagcdn.com/w40/so.png" alt="Somalia flag" class="flag-img" /> Somalia</h3>
           <p>Somali, Arabic, English</p>
         </div>
-
         <div class="language-card">
           <h3><img src="https://flagcdn.com/w40/za.png" alt="South Africa flag" class="flag-img" /> South Africa</h3>
           <p>English, Zulu, Xhosa, Afrikaans</p>
@@ -125,27 +152,63 @@
       </div>
     </section>
 
-    <!-- About Section -->
+    <!-- ===== Dish of the Day Section ===== -->
+    <section id="dish-day" class="section fade-in">
+      <h2><i class="fa-solid fa-utensils"></i> Dish of the Day</h2>
+      <p class="section-intro">Discover a random African dish to inspire your next meal.</p>
+
+      <div class="dish-day-card">
+        <!-- Image changes dynamically via JS -->
+        <img id="dish-image" src="Jollof rice.jpg" alt="Dish of the Day" class="dish-img" />
+        <h3 id="dish-name">Click below to reveal today’s dish!</h3>
+        <button id="random-dish-btn" class="btn">
+          <i class="fa-solid fa-shuffle"></i> Show Dish
+        </button>
+      </div>
+    </section>
+
+    <!-- ===== Suggest a Restaurant Section ===== -->
+    <section id="suggest" class="section fade-in">
+      <h2><i class="fa-solid fa-pen"></i> Suggest a Restaurant</h2>
+      <p class="section-intro">Know a great African restaurant? Share it with us!</p>
+
+      <form id="suggest-form" class="suggest-form">
+        <input type="text" id="restaurant-name" placeholder="Restaurant Name" required />
+        <input type="text" id="restaurant-country" placeholder="Country" required />
+        <textarea id="restaurant-message" placeholder="Why do you recommend it?" required></textarea>
+        <button type="submit" class="btn">
+          <i class="fa-solid fa-paper-plane"></i> Submit
+        </button>
+      </form>
+
+      <p id="form-response" class="form-response"></p>
+    </section>
+
+    <!-- ===== About Section ===== -->
     <section id="about" class="section about fade-in">
-      <h2><i class="fa-solid fa-user"></i> About Me <i class="fa-solid fa-laptop-code about-icon"></i></h2>
+      <h2>
+        <i class="fa-solid fa-user"></i> About Me
+        <i class="fa-solid fa-laptop-code about-icon"></i>
+      </h2>
       <div class="about-card">
-        <img src="Profile.jpg" alt="Benita Aalo" class="Profile-jpg" />
+        <img src="profile.jpg" alt="Benita Aalo" class="profile-img" />
         <p class="about-intro">
           <strong><i class="fa-solid fa-heart"></i> Passion for Culture & Tech:</strong>
-          Hi, I’m <strong>Benita Aalo</strong>, a Computer Science student with a love for technology and the flavours of home.
+          Hi, I’m <strong>Benita Aalo</strong>, a Computer Science student who loves combining creativity with technology.
         </p>
         <p>
-          I created <strong>Aromas of Africa</strong> as a digital space where international students can reconnect with their roots through food.
-          It’s a celebration of culture, comfort, and community where every dish tells a story.
+          I created <strong>Aromas of Africa</strong> as a digital space for international students to reconnect with their roots through food.
+          It’s a celebration of culture, comfort, and community — where every dish tells a story.
         </p>
         <p>
-          I believe that food and technology both bring people together, and through projects like this I’m exploring how digital tools can make
+          I believe food and technology both bring people together. Through projects like this, I’m exploring how digital tools can make
           cultural experiences more accessible and heartwarming.
         </p>
       </div>
     </section>
   </main>
 
+  <!-- ===== Footer ===== -->
   <footer>
     <p>© 2025 Aromas of Africa | Designed by Benita Aalo</p>
     <div class="socials">
@@ -154,30 +217,7 @@
     </div>
   </footer>
 
-  <script>
-    function toggleMenu() {
-      const nav = document.getElementById("navLinks");
-      nav.classList.toggle("show");
-    }
-
-    const faders = document.querySelectorAll(".fade-in");
-    const appearOptions = { threshold: 0.2 };
-    const appearOnScroll = new IntersectionObserver((entries, observer) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add("visible");
-        observer.unobserve(entry.target);
-      });
-    }, appearOptions);
-    faders.forEach((fader) => appearOnScroll.observe(fader));
-
-    const darkToggle = document.getElementById("darkToggle");
-    darkToggle.addEventListener("click", () => {
-      document.body.classList.toggle("dark-mode");
-      darkToggle.innerHTML = document.body.classList.contains("dark-mode")
-        ? '<i class="fa-solid fa-sun"></i>'
-        : '<i class="fa-solid fa-moon"></i>';
-    });
-  </script>
+  <!-- ===== Script ===== -->
+  <script src="script.js"></script>
 </body>
 </html>
