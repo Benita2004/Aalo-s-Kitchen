@@ -53,9 +53,9 @@ function toggleMenu() {
      Dishes are stored as objects with name + image path.
   ================================= */
  const dishes = [
-  { name: "Jollof Rice (Nigeria)", img: "Jollof rice.jpg" },
+  { name: "Jellof Rice (Nigeria)", img: "Jellof rice.jpg" },
   { name: "Waakye (Ghana)", img: "Waakye.jpg" },
-  { name: "Bunny Chow (South Africa)", img: "Bunny Chow.jpg" },
+  { name: "Bunny Chow (South Africa)", img: "Bunny chow.jpg" },
   { name: "Suqaar (Somalia)", img: "Suqaar.jpg" },
   { name: "Egusi Soup (Nigeria)", img: "Egusi.jpg" },
   { name: "Bobotie (South Africa)", img: "Bobotie.jpg" },
@@ -109,4 +109,5 @@ function toggleMenu() {
       }, 4000);
     });
   }
+
   
